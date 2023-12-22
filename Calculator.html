@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+       table{
+        border-radius: 10px;
+        background-color: rgb(16, 16, 17);
+        margin-top: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        width: 550px;
+        height: 850px;
+        padding: 50px;
+       }
+       input[type="text"] {
+        width: 85%;
+        height: 100px;
+        padding:20px 30px;
+        border-radius: 20px;
+        border: 1px solid black;
+       }
+
+       input[type="reset"]{
+        border-radius: 20px;
+        width: 100%;
+        padding: 30px;
+        font-size:50px;
+        font-weight: bolder;
+        background-color: brown;
+        
+       }
+
+
+       input[type="button"]{
+        border-radius: 20px;
+        width: 100%;
+        padding: 30px;
+        font-size: x-large;
+        font-size:50px;
+       }
+       input[type="button" valu="0"]{
+        background-color:tomato;
+
+       }
+
+          
+    </style>
+</head>
+<body>
+    <!--Create Calculator by using HTML and CSS-->
+    <div>
+    <table id="calu">
+        <tr>
+           <td colspan="4"><input type="text" id="result"></td>
+        </tr>
+
+        <tr>
+            <td><input type="reset" value="C"></td>
+            <td style="background-color: darkgoldenrod;"><input type="button" value="M+"></td>
+            <td><input type="button" value="%"></td>
+            <td><input type="button" value="/"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="7"></td>
+            <td><input type="button" value="8"></td>
+            <td><input type="button" value="9"></td>
+            <td><input type="button" value="*"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="4"></td>
+            <td><input type="button" value="5"></td>
+            <td><input type="button" value="6"></td>
+            <td><input type="button" value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1"></td>
+            <td><input type="button" value="2"></td>
+            <td><input type="button" value="3"></td>
+            <td><input type="button" value="+"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="0"></td>
+            <td><input type="button" value="."></td>
+            <td><input type="button" value="="></td>
+        </tr>
+    </table>
+</div>    
+</body>
+</html>
