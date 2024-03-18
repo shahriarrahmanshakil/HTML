@@ -1,32 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Shahriar Rahman Shakil</title> 
-     <link rel="icon" type="" href="Shahriarr.jpg">
+      <title>HTML List-02</title> 
 </head>
 
-<body style="display: block;">
-       <h1 style="background-color:#ED5C3D;text-align:center;"><marquee behavior="" direction="">Well Come to my Web Page</marquee></h1><hr>
+<body>
+       <h1 style="background-color:#ED5C3D;text-align:center;">Well Come to my Web Page</h1><hr>
     
-            <p><img src="Shahriarr.jpg" style="float:right;width:280px;height:250px;"></p>
+            <p><img src="D:\HTML\New folder\Shahriarr.jpg" style="float:right;wight:280px;height:250px;"></p>
             <p style="font-size:30px;">Shahriar Rahman Shakil</p>
             <p>Round-58</p>
             <p>Batch:WDPF/NCLC-A/58/01</p>
             <p>Trainee ID : 1280737</p>
 
-            <p><a href="https://www.isdb-bisew.org/"target="_blank" title="Islamic Development Bank Bangladesh Islamic Solidarity Educational Wakf">IsDB-BISEW </a></p>
+             <a href="D:\HTML\New folder/forms.html">forms</a>
+
+            <p><a href="https://www.isdb-bisew.org/"target="_blank"title="Islamic Development Bank
+Bangladesh Islamic Solidarity Educational Wakf">IsDB-BISEW </a></p>
 
             <p><a href="https://www.isdb-bisew.org/it-scholarship-programme"target="_blank">IT SCHOLLARSHIP PROGRAMME</a></p>
-
-
-             
             
                   
        <h1 style="background-color:#33FF64;text-align:center;">HTML List 02</h1>
 
-<div style="background-color:#FFC0C7; float: left;">
+<div style="background-color:#FFC0C7;">
        <p style="font-size:30px; color:green;">Order List</p>
        <ol>
             <li>HTML
@@ -51,90 +47,48 @@
        </ol>
 </div>
  
-<div style="background-color:#e3cb12;">
-
-     <p style="font-size:30px;color:green;">Unordered list</p>
-
-     <ul>
-          <li>HTML</li>
-          <li>CSS3</li>
-          <li>Bootstrap</li>
-          <li>JavaScript</li>
-          <li>MySQL</li>
-          <li>jQuery</li>
-          <li>WordPress</li> 
-          <li>React</li>
-          <li>Laravel</li>
-          <li>Vue.js</li>
-     </ul>
-
+<div style="background-color:#FFF4A3;">
+<p style="font-size:30px;color:green;">Unordered list</p>
+ <ul>
+     <li>HTML</li>
+     <li>CSS3</li>
+     <li>Bootstrap</li>
+     <li>JavaScript</li>
+     <li>MySQL</li>
+     <li>jQuery</li>
+     <li>WordPress</li> 
+     <li>React</li>
+     <li>Laravel</li>
+     <li>Vue.js</li>
+ </ul>
 </div>
+<h2 style="background-color:#178087;text-align:center;">Application Form</h2>
 
-<h2>HTML Forms</h2>
-<!--Create Survey Form-->
-<form>
+<forms>
+<lavel for="Candidate's Name"> Candidate's Name </lavel> <br><br>
+<input type="text" id="Candidate's Name" name="Candidate's Name"><br><br>
 
-     <fieldset>
-          <legend>Survey Form</legend>
-     <label for="Name">Name</label>
-     <input type="text" id="Name" name="Name" placeholder="Enter your name" size="30">
-     <br><br>
-     <label for="email">Email:</label>
-     <input type="email" id="email" name="email" placeholder="Enter your Email" size="30">
-     <br><br>
-     <label for="age">Age:</label>
-     <input type="number" id="age" name="age" placeholder="Age" size="40">
-     <br><br>
-     <label for="role"> Which option best describes your current role?</label>
-     
-     <select name="w role" id="role">
-          <option value="student">Student</option>
-          <option value="Business Man">Business Man</option>
-          <option value="Farmer">Farmer</option>
-          <option value="House Wife">House Wife</option>
-          <option value="Job Holder">Job Holder</option>
-     </select>
-     
-     <br><br>
-     
-     <label for="recommend">How likely is that you would recommend <br>freeCodeCamp to a friend?</label>
-     
-     <input type="radio" id="Definitely" name="recommend" value="Definitely" >
-     <label for="Definitely">Definitely</label>
-     
-     <input type="radio" id="maybe" name="recommend" value="maybe">
-     <label for="maybe">Maybe</label>
-     
-     <input type="radio" id="nsure" name="recommend" value="nsure">
-     <label for="nsure">Not sure</label>
-     <br><br>
-     
-     <!--form will be modified after complite form-->
+<lavel for="lavel"> Father's Name </lavel><br><br>
+<input type="text" id="Father's Name" name="Father's Name"><br><br>
 
-     <label for="fcc">What do you like most in FCC</label>
+<lavel for="dob">Date of Birth</lavel><br><br>
+<input type="Date" id="dob" name="dob"><br><br>
 
-     <select name="fcc" id="fcc"placeholder="Select option">
+<lable for="Gender">Gender:</lavel>
+<input type="radio" id="Gender" name="Gender" value="Male">Male
+<input type="radio" id="Gender" name="Gender" Value="Female">Female<br><br>
 
-          <option value="A"> A </option>
-          <option value="B"> B </option>
-          <option value="C"> C </option>
-          <option value="D"> D </option>
-          <option value="E"> E </option>
+<span>Religion:</span>
+<input type="radio" id="Islam" name="Islam" value="Islam"> <label for="Islam">Islam</label>
+<input type="radio" id="Hindu" name="Religion" value="Hindu"> Hindu
+<input type="radio" id="Other" name="Religion" value="Other"> Other
 
-     </select>
 
-     <br><br>
+</forms>
 
-     <label for="ca">Things that should be improved in the future <br>(Check all that apply)</label>
-     <input type="checkbox" id="fp" name="ca" value="fp">
-     <label for="fp"> Fornt-end Project </label>
-     <input type="checkbox" id="bp" name="ca" value="bp">
-     <label for="bp">Back-end Project</label>
-     <input type="checkbox" id="dv" name="ca" value="dv">
-     <label for="dv"> Data Visulaization</label>
-</fieldset>
 
-</form>
+
+
 
 
 </body>
