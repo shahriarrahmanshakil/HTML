@@ -3,84 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <style>
-        label{
-            display: inline-block;
-            width: 100px;
-        }
-        input[text]{
-            width: 150px;
-        }
-        input[radio] {
-            width:50px;
-        }
-        fieldset{
-            display: block;
-            margin-left: 2px;
-            margin-right: 2px;
-            padding-top: 0.35em;
-            padding-bottom: 0.625em;
-            padding-left: 0.75em;
-            padding-right: 0.75em;
-            border: 2px groove (internal value);
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Student Registration Form</h1>
-    <form>
+    <form action="#" name="pnam">
 
-        <fieldset>
-            <legend>Student Registration Form</legend>
-        <h2>Student Registration Form</h2>
-        <br>
-        <label for="sn">Student Name</label>
-        <input type="text" id="sn" name="St name" size="30" placeholder="Full Name">
-        <br><br>
-    <label for="fn">Father's Name</label>
-    <input type="text" id="fn" name="f name" size="30" placeholder="Father's Name">
-    <br><br>
-    <label for="mn">Mother's Name</label>
-    <input type="text" id="nm" name="m name" size="30" placeholder="Mother's Name">
-    <br><br>
-    
-    <label for="gnd">Gender</label>
-    <input type="radio" id="male" name="Gender" value="male">
-    <label for="male">Male</label>
-    
-    <input type="radio" id="female" name="Gender" value="female">
-    <label for="female">Female</label>
-    
-    <input type="radio" id="other" name="Gender" value="other">
-    <label for="other">Other</label>
-    <br><br>
-    <label for="dob"> Date of Birth</label>
-    <input type="date" id="dob" name="dob">
-        <br><br>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="Email" placeholder="email@xyz.com">
-        <br><br>
-    <label for="level"> Level</label>
-    <select name="Level" id="level">
-        <option value="high school">High School</option>
-        <option value="College">College</option>
-        <option value="University">University</option>
-    </select>
-    <br><br>
-    <label for="dp">Department</label>
-    <select name="dp" id="dpt">
-        <option value="EE"> Electrical Engineering</option>
-        <option value="cse">Computer Science and Engineering</option>
-    </select>
-    <br><br>
-    <label for="tm">Tel/Mobile</label>
-    <input type="number" id="tm" name="tmb" placeholder="xxx xxx xxx" size="50">
+    <fieldset>
 
-</fieldset>
+        <label for="name"> Name </label>
+        <input type="text" id="name"><br><br>
 
-    
-</form>
-    
+        <label for="ame"> Address </label>
+        <textarea name="" id="ame" cols="30" rows="10"></textarea><br><br>
+
+        <label for="mail"> Email </label>
+        <input type="text" id="mail"><br><br><br>
+
+
+        <button onclick="d_w()">Submit</button>
+
+    </fieldset>
+    </form>
+
+    <script>
+        function d_w (){
+            var naMe = document.pnam.name.value;
+            var adD = document.pnam.ame.value;
+            var maiL = document.pnam.mail.value;
+            //create New Window
+            doc = open('','', 'width=300px,height=500px')
+            with(doc.document){
+                write(naMe);
+                write(adD);
+                write(maiL);
+            }
+
+
+        }
+    </script>
 </body>
 </html>
