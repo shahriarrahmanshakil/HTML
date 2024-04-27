@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page - Full Example</title>
+    <style>
+        *{  
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .heading{
+            background-color: rgb(122, 122, 122);
+    
+        }
+        
+        .left{
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        .left a{
+            display: block;
+            width: 100%;
+            margin: 10px 0px;
+            padding: 15px;
+            background-color: rgb(163, 163, 163);
+            text-decoration: none;
+        }
+
+        .menu{
+            float: left;
+            width: 60%;
+            padding: 0px 20px;
+        }
+
+        .right{
+            background-color: rgb(165, 165, 151);
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        .footer{
+            background-color: rgb(102, 109, 107);
+            padding: 20px;
+            text-align: center;
+            margin-top: 10px;
+            justify-content: center;
+            font-size: xx-large;
+        }
+
+        @media only screen and (max-width: 520px){
+            .heading, .left, .menu, .right, .footer{
+                width:100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Responsive Web Page Full Example</h1>
+        <h3 style="text-align: center;">Hello Bangladesh</h3>
+    </div>
+    <div style="overflow: auto;">
+        <div class="left">
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+            <a href="#">link 4</a>
+            <a href="#">link 5</a>
+        </div>
+
+        <div class="menu">
+            <h3>Lorem ipsum</h3>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid hic eius nemo, ratione esse a alias! Blanditiis asperiores tempora ipsam officia alias id architecto, itaque natus voluptatum soluta fugiat dignissimos accusamus, reiciendis quasi! Est sint facilis blanditiis tempora debitis odio, quasi eveniet itaque, provident aspernatur ipsa veritatis molestiae cumque et.</P>
+
+        </div>
+
+        <div class="right">
+            <h1>About</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est ullam, aliquam aperiam ?</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Footer</h3>
+    </div>
+</body>
+</html>

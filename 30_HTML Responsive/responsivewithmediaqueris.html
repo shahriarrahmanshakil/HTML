@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive width Media Queries</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .left{
+            background-color: blueviolet;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+        .main{ 
+            background-color: rgb(156, 9, 75);
+            padding: 20px;
+            float: left;
+            width: 60%;
+        }
+        .right{
+            background-color: rgb(75, 116, 10);
+            padding:20px;
+            float: left;
+            width: 20%;
+        }
+        @media screen and (max-width:800px){
+            .left, .main, .right{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>use Media Queries</h1>
+    <div class="left">Left Menu</div>
+    <div class="main">Main Menu</div>
+    <div class="right">Right Menu</div>
+</body>
+</html>
